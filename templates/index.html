@@ -22,13 +22,102 @@
       color: #333;
       margin-top: 20px;
     }
+
+    .top-ad, .bottom-ad {
+      margin: 20px auto;
+    }
+
+    .side-ads {
+      position: fixed;
+      top: 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .left-ad {
+      left: 10px;
+    }
+
+    .right-ad {
+      right: 10px;
+    }
+
+    .center-container {
+      max-width: 600px;
+      margin: auto;
+    }
   </style>
 </head>
 <body>
-  <h1>Chat with Website</h1>
-  <input type="text" id="messageInput" placeholder="Type 'hello'" />
-  <button onclick="sendMessage()">Send</button>
-  <p id="response"></p>
+
+  <!-- Top Ad -->
+  <div class="top-ad">
+    <script type="text/javascript">
+      atOptions = {
+        'key': '24867043c5e406e3e6ab47853e7f3251',
+        'format': 'iframe',
+        'height': 90,
+        'width': 728,
+        'params': {}
+      };
+    </script>
+    <script type="text/javascript" src="//www.highperformanceformat.com/24867043c5e406e3e6ab47853e7f3251/invoke.js"></script>
+  </div>
+
+  <!-- Side Ads -->
+  <div class="side-ads left-ad">
+    <script type="text/javascript">
+      atOptions = {
+        'key': '74c002fe25960e7432c9cf6116cb6ec6',
+        'format': 'iframe',
+        'height': 600,
+        'width': 160,
+        'params': {}
+      };
+    </script>
+    <script type="text/javascript" src="//www.highperformanceformat.com/74c002fe25960e7432c9cf6116cb6ec6/invoke.js"></script>
+  </div>
+
+  <div class="side-ads right-ad">
+    <script type="text/javascript">
+      atOptions = {
+        'key': 'e5c1f63b8dbc69d01b3667a343a6e27f',
+        'format': 'iframe',
+        'height': 50,
+        'width': 320,
+        'params': {}
+      };
+    </script>
+    <script type="text/javascript" src="//www.highperformanceformat.com/e5c1f63b8dbc69d01b3667a343a6e27f/invoke.js"></script>
+  </div>
+
+  <!-- Main App -->
+  <div class="center-container">
+    <h1>Chat with Website</h1>
+    <input type="text" id="messageInput" placeholder="Type 'hello'" />
+    <button onclick="sendMessage()">Send</button>
+    <p id="response"></p>
+  </div>
+
+  <!-- Ad Below Chat -->
+  <div>
+    <script type="text/javascript">
+      atOptions = {
+        'key': 'a0bdf9df6b35fee0d84a521d4262267c',
+        'format': 'iframe',
+        'height': 60,
+        'width': 468,
+        'params': {}
+      };
+    </script>
+    <script type="text/javascript" src="//www.highperformanceformat.com/a0bdf9df6b35fee0d84a521d4262267c/invoke.js"></script>
+  </div>
+
+  <!-- Bottom Ad -->
+  <div class="bottom-ad">
+    <script type='text/javascript' src='//pl27286049.profitableratecpm.com/e5/42/0f/e5420f230c27bb02f704d25e3eed9d25.js'></script>
+  </div>
 
   <script>
     async function sendMessage() {
@@ -47,5 +136,6 @@
       document.getElementById('response').innerText = data.reply;
     }
   </script>
+
 </body>
 </html>
